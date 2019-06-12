@@ -1,0 +1,14 @@
+service: productmatchapi
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  token:
+    handler: handler.token
+    environment: ${file(serverless.env.yml):environment}
+    events:
+      - http:
+          path: token
+          method: post

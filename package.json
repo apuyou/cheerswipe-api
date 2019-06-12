@@ -1,0 +1,9 @@
+{
+  "name": "productmatchapi",
+  "version": "1.0.0",
+  "description": "API for Product Match app",
+  "main": "handler.js",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
